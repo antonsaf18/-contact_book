@@ -1,4 +1,5 @@
 import contactFormComponent from '../contact-form-component/contact-form-component'
+import contactListComponent from '../contact-list-component/contact-list-component'
 
 export default {
     name: 'main-content-component',
@@ -7,6 +8,7 @@ export default {
     },
     components: {
         contactFormComponent,
+        contactListComponent,
     },
     data: function () {
         return {
