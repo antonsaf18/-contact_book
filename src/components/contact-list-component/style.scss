@@ -42,11 +42,15 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 5px;
+        &-name {
+          min-width: 105px;
+          text-align: left;
+        }
         &-check {
           margin-left: 10px;
           cursor: pointer;
-          width: 13px;
-          height: 13px;
+          width: 11px;
+          height: 11px;
           //background-color: red;
           &-check {
             border: 1px solid black;
@@ -68,6 +72,10 @@
       }
       &-number {
         color: #858585;
+        &-number {
+          min-width: 105px;
+          text-align: left;
+        }
       }
     }
   }
