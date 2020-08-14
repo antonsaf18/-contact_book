@@ -1,0 +1,22 @@
+.contact-list-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  border: 2px solid red;
+  margin: 10px;
+  border-radius: 3px;
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    height: 370px;
+  }
+}
