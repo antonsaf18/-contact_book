@@ -1,22 +1,21 @@
 <div class="contact-list-component">
     <div class="contact-list-component-info">
-        <h3>Добавить контакт</h3>
+        <h3>Список контактов</h3>
     </div>
     <div class="contact-list-component-wrap">
 
-        <div :arrayForUser="arrForUser" v-if="isClicked" class="contact-list-component-wrap-user">
+        <div v-if="isClicked" class="contact-list-component-wrap-user">
             <div class="contact-list-component-wrap-user-name">
-                <h3 v-for="item in arrForUser" class="contact-list-component-wrap-user-name-name">{{item.user}}</h3>
+                <h3 class="contact-list-component-wrap-user-name-name">111111111111</h3>
                 <div v-on:click="getClick()" class="contact-list-component-wrap-user-name-check">
                     <div class="contact-list-component-wrap-user-name-check-check"></div>
                     <div class="contact-list-component-wrap-user-name-check-check1"></div>
                 </div>
             </div>
             <div class="contact-list-component-wrap-user-number">
-                <h3 v-for="item in arrForUser" class="contact-list-component-wrap-user-number-number">{{item.number}}</h3>
+                <h3 class="contact-list-component-wrap-user-number-number">111111111</h3>
             </div>
         </div>
-
 
     </div>
 </div>
