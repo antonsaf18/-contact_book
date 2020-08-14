@@ -17,9 +17,15 @@ export default {
             this.$emit('typing', event.target.value)
         },
         getClick(what) {
-            if (what === this.arrForContact.isClose) {
+            console.log('getclick ' + what);
+            if (what === 0) {
                 this.isClicked = false;
             }
+            // if (what === this.arrForContact.isClose) {
+            //     this.isClicked = false;
+            //     console.log(this.arrForContact);
+            //     console.log(what);
+            // }
         }
     }
 }

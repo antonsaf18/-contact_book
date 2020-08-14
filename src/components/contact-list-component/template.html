@@ -7,7 +7,7 @@
         <div v-for="(item, index) in arrForContact" v-if="isClicked + index" class="contact-list-component-wrap-user">
             <div class="contact-list-component-wrap-user-name">
                 <h3 class="contact-list-component-wrap-user-name-name">{{item.name}}</h3>
-                <div v-on:click="getClick(index.isClose)" class="contact-list-component-wrap-user-name-check">
+                <div v-on:click="getClick(index)" class="contact-list-component-wrap-user-name-check">
                     <div class="contact-list-component-wrap-user-name-check-check"></div>
                     <div class="contact-list-component-wrap-user-name-check-check1"></div>
                 </div>
