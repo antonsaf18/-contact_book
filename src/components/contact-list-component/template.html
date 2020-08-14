@@ -4,16 +4,16 @@
     </div>
     <div class="contact-list-component-wrap">
 
-        <div v-if="isClicked" class="contact-list-component-wrap-user">
+        <div v-for="(item, index) in arrForContact" v-if="isClicked + index" class="contact-list-component-wrap-user">
             <div class="contact-list-component-wrap-user-name">
-                <h3 class="contact-list-component-wrap-user-name-name">Иван Иванов</h3>
-                <div v-on:click="getClick()" class="contact-list-component-wrap-user-name-check">
+                <h3 class="contact-list-component-wrap-user-name-name">{{item.name}}</h3>
+                <div v-on:click="getClick(index.isClose)" class="contact-list-component-wrap-user-name-check">
                     <div class="contact-list-component-wrap-user-name-check-check"></div>
                     <div class="contact-list-component-wrap-user-name-check-check1"></div>
                 </div>
             </div>
             <div class="contact-list-component-wrap-user-number">
-                <h3 class="contact-list-component-wrap-user-number-number">8 952 178 00 00</h3>
+                <h3 class="contact-list-component-wrap-user-number-number">{{item.number}}</h3>
             </div>
         </div>
 
