@@ -12,9 +12,7 @@ export default {
     },
     data: function () {
         return {
-            arrayForContact: [
-
-            ],
+            arrayForContact: [],
             newContact: {
                 name: '',
                 number: '',

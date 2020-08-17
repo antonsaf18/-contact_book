@@ -19,10 +19,6 @@ export default {
     },
 
     methods: {
-        goTo(whereTo) {
-            this.$router.push({name:whereTo})
-            // this.$store.commit('setMessageForm', '');
-            // window.scrollTo(0,0)
-        }
+
     }
 }
