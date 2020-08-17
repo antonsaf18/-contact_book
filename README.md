@@ -1,3 +1,4 @@
+<img style="width: 1150px" src="demo.gif" alt="">
 # contact_book
 -  vue js;
 
@@ -38,4 +39,4 @@ npm run serve
 Макет приложен к заданию в форматах PSD и PNG. 
 
 
-<img style="width: 1150px" src="demo.gif" alt="">
+
