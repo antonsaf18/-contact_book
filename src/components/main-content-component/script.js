@@ -13,26 +13,12 @@ export default {
     data: function () {
         return {
             arrayForContact: [
-                {
-                    name: 'Николай Петров',
-                    number: '8 952 178 78 11',
-                    isClose: true,
-                },
-                {
-                    name: 'Иван Иванов',
-                    number: '8 999 178 00 00',
-                    isClose: true,
-                },
-                {
-                    name: 'Константин Константинов',
-                    number: '8 999 178 22 22',
-                    isClose: true,
-                },
+
             ],
             newContact: {
                 name: '',
                 number: '',
-                isClose: true,
+
             }
         }
     },
@@ -52,7 +38,7 @@ export default {
                 this.newContact = {
                     name: '',
                     number: '',
-                    isClose: true,
+
                 }
             } else {
                 console.log();
