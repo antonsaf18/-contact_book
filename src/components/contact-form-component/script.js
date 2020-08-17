@@ -31,7 +31,7 @@ export default {
     },
 
     mounted() {
-        Vue.axios.get('http://localhost:3000/posts/1').then((response) => {
+        Vue.axios.get('http://localhost:3000/arrForContact').then((response) => {
             console.log(response.data)
         })
     }
