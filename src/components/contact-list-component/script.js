@@ -9,7 +9,7 @@ export default {
         }
     },
     created() {
-        console.log(this.arrForContact.index)
+
     },
 
     methods: {

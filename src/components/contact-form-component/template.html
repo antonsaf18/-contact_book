@@ -4,15 +4,15 @@
             <h3>Добавить контакт</h3>
         </div>
     </div>
-    <div class="contact-form-component-wrap-main">
+    <form class="contact-form-component-wrap-main">
             <div class="contact-form-component-wrap-main-input">
-                <input @input="writeData('name', $event)" type="text" placeholder="Имя">
-                <input @input="writeData('number', $event)" type="text" placeholder="Телефон">
+                <input @input="writeData('name', $event)" type="text" placeholder="Имя" required>
+                <input @input="writeData('number', $event)" type="text" placeholder="Телефон" required>
             </div>
             <div class="contact-form-component-wrap-main-button">
                 <button @click="addData">
                     <h3>Добавить</h3>
                 </button>
             </div>
-    </div>
+    </form>
 </div>
