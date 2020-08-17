@@ -31,7 +31,7 @@ export default {
     },
 
     mounted() {
-        Vue.axios.get('https://api.coindesk.com/v1/bpi/currentprice.json').then((response) => {
+        Vue.axios.get('http://localhost:3000/posts/1').then((response) => {
             console.log(response.data)
         })
     }
