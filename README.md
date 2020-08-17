@@ -19,7 +19,7 @@
 npm i
 npm run serve
 ```
-<img style="width: 1150px" src="demo.gif" alt="">
+
 
 
 
@@ -37,3 +37,5 @@ npm run serve
 
 Макет приложен к заданию в форматах PSD и PNG. 
 
+
+<img style="width: 1150px" src="demo.gif" alt="">
