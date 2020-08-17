@@ -1,5 +1,5 @@
 <div class="main-content-component">
-    <contactFormComponent></contactFormComponent>
+    <contactFormComponent @addFormData="emitButtonForm" @writeFormData="emitInputForm"></contactFormComponent>
     <contactListComponent
             :arrForContact="arrayForContact"
     ></contactListComponent>

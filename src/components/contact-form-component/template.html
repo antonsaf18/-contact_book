@@ -6,11 +6,11 @@
     </div>
     <div class="contact-form-component-wrap-main">
             <div class="contact-form-component-wrap-main-input">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Телефон">
+                <input @input="writeData('name', $event)" type="text" placeholder="Имя">
+                <input @input="writeData('number', $event)" type="text" placeholder="Телефон">
             </div>
             <div class="contact-form-component-wrap-main-button">
-                <button>
+                <button @click="addData">
                     <h3>Добавить</h3>
                 </button>
             </div>

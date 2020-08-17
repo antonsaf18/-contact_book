@@ -16,16 +16,8 @@ export default {
         inputting(event) {
             this.$emit('typing', event.target.value)
         },
-        getClick(what) {
-            console.log('getclick ' + what);
-            if (what === 0) {
-                this.isClicked = false;
-            }
-            // if (what === this.arrForContact.isClose) {
-            //     this.isClicked = false;
-            //     console.log(this.arrForContact);
-            //     console.log(what);
-            // }
+        delClick(indexArrayItem) {
+            this.$delete(this.arrForContact, indexArrayItem)
         }
     }
 }

@@ -14,6 +14,17 @@ export default {
     methods: {
         inputting(event) {
             this.$emit('typing', event.target.value)
+        },
+
+        writeData(who, ev) {
+            this.$emit('writeFormData', {
+                who: who,
+                value: ev.target.value
+            });
+        },
+
+        addData() {
+            this.$emit('addFormData')
         }
     }
 }

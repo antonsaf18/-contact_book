@@ -29,7 +29,11 @@ export default {
                     isClose: true,
                 },
             ],
-
+            newContact: {
+                name: '',
+                number: '',
+                isClose: true,
+            }
         }
     },
     created() {
@@ -38,6 +42,22 @@ export default {
     methods: {
         inputting(event) {
             this.$emit('typing', event.target.value)
-        }
+        },
+        emitInputForm(ev) {
+            this.newContact[ev.who] = ev.value;
+        },
+        emitButtonForm() {
+            if (this.newContact.name && this.newContact.number) {
+                this.arrayForContact.push(this.newContact);
+                this.newContact = {
+                    name: '',
+                    number: '',
+                    isClose: true,
+                }
+            } else {
+                console.log();
+            }
+        },
+
     }
 }
