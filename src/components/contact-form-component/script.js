@@ -1,9 +1,3 @@
-import Vue from 'vue'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
-
-Vue.use(VueAxios, axios)
-
 export default {
     name: 'contact-form-component',
     props: {
@@ -31,8 +25,6 @@ export default {
     },
 
     mounted() {
-        Vue.axios.get('http://localhost:3000/arrForContact').then((response) => {
-            console.log(response.data)
-        })
+
     }
 }
